@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+
+    <!-- jQuery Mobile CSS -->
+    <link rel="stylesheet"
+    href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- jQuery -->
+    <script
+    src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- jQuery Mobile JS -->
+    <script
+    src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+        img{
+            width:150px;
+            border-radius:50%;
+            display:block;
+            margin:auto;
+        }
+
+        .center{
+            text-align:center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HOME PAGE -->
+    <div data-role="page" id="home">
+
+        <div data-role="header">
+            <h1>My Portfolio</h1>
+
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home"
+                    class="ui-btn-active">Home</a></li>
+
+                    <li><a href="#about">About</a></li>
+
+                    <li><a href="#projects">Projects</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div data-role="content" class="center">
+
+            <img src="https://via.placeholder.com/150">
+
+            <h2>Kunal</h2>
+
+            <p>
+                Full Stack Developer | Cloud Enthusiast
+            </p>
+
+            <a href="#projects"
+            class="ui-btn ui-corner-all ui-shadow ui-btn-b">
+                View Projects
+            </a>
+
+        </div>
+
+        <div data-role="footer">
+            <h4>Portfolio Website</h4>
+        </div>
+
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div data-role="page" id="about">
+
+        <div data-role="header">
+            <h1>About Me</h1>
+        </div>
+
+        <div data-role="content">
+
+            <p>
+                I am a passionate web developer interested in
+                cloud computing, backend systems and full stack
+                development.
+            </p>
+
+            <h3>Skills</h3>
+
+            <ul data-role="listview">
+                <li>HTML, CSS, JavaScript</li>
+                <li>Node.js & Express</li>
+                <li>MongoDB</li>
+                <li>AWS Cloud</li>
+            </ul>
+
+            <a href="#home"
+            class="ui-btn ui-corner-all">
+                Back to Home
+            </a>
+
+        </div>
+
+        <div data-role="footer">
+            <h4>About Section</h4>
+        </div>
+
+    </div>
+
+    <!-- PROJECT PAGE -->
+    <div data-role="page" id="projects">
+
+        <div data-role="header">
+            <h1>Projects</h1>
+        </div>
+
+        <div data-role="content">
+
+            <ul data-role="listview">
+
+                <li>
+                    <h2>E-Commerce Website</h2>
+                    <p>Online shopping web application.</p>
+                </li>
+
+                <li>
+                    <h2>Cloud Deployment Project</h2>
+                    <p>Hosted applications on AWS EC2.</p>
+                </li>
+
+                <li>
+                    <h2>Portfolio Website</h2>
+                    <p>Responsive personal portfolio design.</p>
+                </li>
+
+            </ul>
+
+            <a href="#home"
+            class="ui-btn ui-corner-all">
+                Back to Home
+            </a>
+
+        </div>
+
+        <div data-role="footer">
+            <h4>Projects Section</h4>
+        </div>
+
+    </div>
+
+    <!-- CONTACT PAGE -->
+    <div data-role="page" id="contact">
+
+        <div data-role="header">
+            <h1>Contact Me</h1>
+        </div>
+
+        <div data-role="content">
+
+            <form>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+
+                <label for="msg">Message:</label>
+                <textarea id="msg"></textarea>
+
+                <input type="submit" value="Send">
+
+            </form>
+
+            <a href="#home"
+            class="ui-btn ui-corner-all">
+                Back to Home
+            </a>
+
+        </div>
+
+        <div data-role="footer">
+            <h4>Contact Section</h4>
+        </div>
+
+    </div>
+
+</body>
+</html>

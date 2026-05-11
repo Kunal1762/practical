@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Registered Users</title>
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Registered Users</h2>
+
+    <table border="1" width="100%">
+
+        <thead>
+
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Course</th>
+            </tr>
+
+        </thead>
+
+        <tbody id="userTable">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script>
+
+let users = JSON.parse(localStorage.getItem("users")) || [];
+
+let table = document.getElementById("userTable");
+
+users.forEach(user => {
+
+    table.innerHTML += `
+    <tr>
+        <td>${user.name}</td>
+        <td>${user.email}</td>
+        <td>${user.course}</td>
+    </tr>
+    `;
+});
+
+</script>
+
+</body>
+</html>
+# python3 -m http.server 8000
