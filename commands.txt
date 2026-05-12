@@ -1,0 +1,21 @@
+AWS:
+Sudo apt update
+Sudo apt install apache2 -y
+Sudo systemctl start apache2
+Sudo systemctl enable apache2
+Sudo systemctl status apache2
+Sudo nano the path // edit the file
+sudo rm  /var/www/html/index.html
+scp -i "Downloads\mykey2.pem" -r "D:\space-science/*" ubuntu@3.26.183.220:/home/ubuntu
+sudo cp -r /home/ubuntu/* /var/www/html
+sudo systemctl restart apache2
+//after execution
+sudo systemctl stop apache2
+exit
+Git:
+Git init
+Git add .
+Git commit -m “whatever”
+Git remote add origin <link>
+Git branch -M main
+Git push -u origin main
