@@ -12,6 +12,8 @@ sudo systemctl restart apache2
 //after execution
 sudo systemctl stop apache2
 exit
+
+
 Git:
 Git init
 Git add .
@@ -19,3 +21,20 @@ Git commit -m “whatever”
 Git remote add origin <link>
 Git branch -M main
 Git push -u origin main
+
+
+Docker:
+sudo apt update
+sudo apt install docker.io -y
+docker --version
+sudo docker images
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo systemctl status docker
+sudo docker run hello-world
+sudo docker ps
+sudo docker ps -a
+sudo docker run -it ubuntu bash
+ls
+
+
